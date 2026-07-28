@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('.nav');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
-            nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            nav.style.boxShadow = '0 2px 20px rgba(74, 74, 74, 0.1)';
         } else {
             nav.style.boxShadow = 'none';
         }

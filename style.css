@@ -30,7 +30,7 @@
     --pink: #d4a5a5;
     --pink-light: #e8c4c4;
     --white: #ffffff;
-    --shadow: rgba(0, 0, 0, 0.08);
+    --shadow: rgba(74, 74, 74, 0.08); /* Было rgba(0, 0, 0, 0.08) */
     --radius: 20px;
     --transition: 0.3s ease;
 }
@@ -177,7 +177,7 @@ body {
     background: linear-gradient(145deg, #2a2a35, #1a1a24);
     border-radius: 44px;
     padding: 12px;
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 30px 80px rgba(74, 74, 74, 0.2); /* Было rgba(0, 0, 0, 0.2) */
 }
 
 .phone-screen {
@@ -196,7 +196,7 @@ body {
     transform: translateX(-50%);
     width: 100px;
     height: 26px;
-    background: #000;
+    background: #4A4A4A; /* Было #000 */
     border-radius: 20px;
     z-index: 2;
 }
@@ -791,4 +791,125 @@ section {
 .animate-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* ===== PHOTO SUBSECTIONS ===== */
+.photo-subsection {
+    margin-bottom: 80px;
+    padding: 40px;
+    background: var(--bg);
+    border-radius: var(--radius);
+    box-shadow: 0 10px 40px var(--shadow);
+}
+
+.photo-subsection:last-child {
+    margin-bottom: 0;
+}
+
+.subsection-title {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.subsection-desc {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 900px;
+}
+
+.photo-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.photo-grid.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.photo-grid.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.photo-grid.grid-3x2 { grid-template-columns: repeat(3, 1fr); }
+
+.photo-item {
+    border-radius: var(--radius);
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    box-shadow: 0 5px 20px var(--shadow);
+    transition: var(--transition);
+}
+
+.photo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px var(--shadow);
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.photo-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive for photo grids */
+@media (max-width: 1024px) {
+    .photo-grid.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-subsection {
+        padding: 24px;
+    }
+    
+    .photo-grid.grid-3,
+    .photo-grid.grid-4,
+    .photo-grid.grid-3x2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .subsection-title {
+        font-size: 28px;
+    }
+
+    .subsection-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+}
+
+/* Custom check mark icon for subsections and coding cards */
+.subsection-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 12px;
+    margin-bottom: 4px;
+}
+
+.coding-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coding-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .coding-icon img {
+        width: 32px;
+        height: 32px;
+    }
 }
