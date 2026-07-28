@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аня - Instagram Content Creator</title>
+    <title>Аня - UX/UI Designer & Content Creator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
     <!-- Navigation -->
@@ -65,7 +65,7 @@
                 <h2 class="section-title handwritten">МОЙ <span class="pink">ОПЫТ</span> И <span class="pink">ЗНАНИЯ</span></h2>
             </div>
             <div class="about__grid">
-                <div class="about__photo">
+                <div class="about__photo animate-on-scroll">
                     <div class="photo-frame">
                         <img src="img/iam.png" alt="Аня" class="profile-img">
                     </div>
@@ -73,14 +73,14 @@
                     <div class="blob blob-2"></div>
                 </div>
                 <div class="about__content">
-                    <div class="about__block">
+                    <div class="about__block animate-on-scroll">
                         <h3 class="about__subtitle pink handwritten">ОБРАЗОВАНИЕ</h3>
                         <ul class="check-list">
                             <li><span class="check">✓</span> Курсы TEACHMESKILLS по UX/UI дизайну</li>
                             <li><span class="check">✓</span> БГУИР - программист-веб-дизайнер</li>
                         </ul>
                     </div>
-                    <div class="about__block">
+                    <div class="about__block animate-on-scroll">
                         <h3 class="about__subtitle pink handwritten">HARD SKILLS</h3>
                         <div class="skills-grid">
                             <div class="skill-item">User Experience</div>
@@ -103,105 +103,207 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Section (Navigation) -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title handwritten">ЧТО <span class="pink">Я МОГУ</span></h2>
+                <p class="section-subtitle">Нажмите на категорию, чтобы перейти к примерам работ</p>
             </div>
             <div class="services__grid">
-                <div class="service-card">
-                    <div class="service-icon"></div>
-                    <h3 class="service-title">Разработка веб-дизайна</h3>
-                    <p class="service-desc">Создание уникальных и современных интерфейсов для сайтов и приложений</p>
-                </div>
-                <div class="service-card">
+                <a href="#portfolio-uxui" class="service-card animate-on-scroll">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Дизайн сайтов (UX/UI)</h3>
+                    <p class="service-desc">Проектирование удобных и эстетичных интерфейсов</p>
+                </a>
+                <a href="#portfolio-coding" class="service-card animate-on-scroll">
+                    <div class="service-icon">💻</div>
+                    <h3 class="service-title">Вёрстка сайтов</h3>
+                    <p class="service-desc">HTML, CSS, JavaScript, адаптивность</p>
+                </a>
+                <a href="#portfolio-blender" class="service-card animate-on-scroll">
+                    <div class="service-icon">🎬</div>
+                    <h3 class="service-title">Работа в Blender</h3>
+                    <p class="service-desc">3D моделирование и датасеты для ML</p>
+                </a>
+                <a href="#portfolio-wedding" class="service-card animate-on-scroll">
+                    <div class="service-icon">💌</div>
+                    <h3 class="service-title">Свадебная полиграфия</h3>
+                    <p class="service-desc">Дизайн пригласительных и макетов для печати</p>
+                </a>
+                <a href="#portfolio-presentations" class="service-card animate-on-scroll">
                     <div class="service-icon">📊</div>
                     <h3 class="service-title">Презентации</h3>
-                    <p class="service-desc">Подготовка и разработка презентаций любой сложности</p>
-                </div>
-                <div class="service-card">
+                    <p class="service-desc">Дизайн и разработка слайдов любой сложности</p>
+                </a>
+                <a href="#portfolio-photo" class="service-card animate-on-scroll">
                     <div class="service-icon">📸</div>
-                    <h3 class="service-title">Mobile съемка</h3>
-                    <p class="service-desc">Мобильная фотосъемка и обработка для Instagram</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📈</div>
-                    <h3 class="service-title">Маркетинг</h3>
-                    <p class="service-desc">Анализ конкурентов и подбор маркетинговых стратегий</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"></div>
-                    <h3 class="service-title">Стиль для соцсетей</h3>
-                    <p class="service-desc">Подбор собственного стиля для продвижения в социальных сетях</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎬</div>
-                    <h3 class="service-title">Контент</h3>
-                    <p class="service-desc">Создание контента для рекламы и соц сетей (в том числе видео)</p>
-                </div>
+                    <h3 class="service-title">Мобильная съёмка</h3>
+                    <p class="service-desc">Контентная фотография и обработка</p>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section (All categories on one page) -->
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title handwritten">МОИ <span class="pink">РАБОТЫ</span></h2>
             </div>
-            <div class="portfolio__grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/franchel.png" alt="FRANCHEL">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-name handwritten pink">FRANCHEL</h3>
-                        <p class="project-desc">Онлайн-магазин одежды с минималистичным дизайном</p>
-                        <a href="https://www.behance.net/gallery/181598649/Online-clothing-store-FRANCHEL" target="_blank" class="project-link">Behance →</a>
-                    </div>
+
+            <!-- 1. UX/UI Design -->
+            <div class="portfolio-category" id="portfolio-uxui">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">ДИЗАЙН <span class="pink">САЙТОВ</span> (UX/UI)</h3>
                 </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/moana.png" alt="Moana Academy">
+                <div class="portfolio__grid">
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="img/franchel.png" alt="FRANCHEL">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-name handwritten pink">FRANCHEL</h3>
+                            <p class="project-desc">Онлайн-магазин одежды с минималистичным дизайном</p>
+                            <a href="https://www.behance.net/gallery/181598649/Online-clothing-store-FRANCHEL" target="_blank" class="project-link">Behance →</a>
+                        </div>
                     </div>
-                    <div class="project-info">
-                        <h3 class="project-name handwritten pink">Moana Academy</h3>
-                        <p class="project-desc">Образовательная платформа с ярким интерфейсом</p>
-                        <a href="https://www.behance.net/gallery/251493143/Moana-Academy" target="_blank" class="project-link">Behance →</a>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="img/moana.png" alt="Moana Academy">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-name handwritten pink">Moana Academy</h3>
+                            <p class="project-desc">Образовательная платформа с ярким интерфейсом</p>
+                            <a href="https://www.behance.net/gallery/251493143/Moana-Academy" target="_blank" class="project-link">Behance →</a>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/yoga.png" alt="Awesome Ways Yoga">
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="img/yoga.png" alt="Awesome Ways Yoga">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-name handwritten pink">Awesome Ways Yoga</h3>
+                            <p class="project-desc">Сайт для йога-студии с атмосферным дизайном</p>
+                            <a href="https://www.behance.net/gallery/251658017/Awesome-Ways-Yoga" target="_blank" class="project-link">Behance →</a>
+                        </div>
                     </div>
-                    <div class="project-info">
-                        <h3 class="project-name handwritten pink">Awesome Ways Yoga</h3>
-                        <p class="project-desc">Сайт для йога-студии с атмосферным дизайном</p>
-                        <a href="https://www.behance.net/gallery/251658017/Awesome-Ways-Yoga" target="_blank" class="project-link">Behance →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/coffe.png" alt="STERNLI">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-name handwritten pink">STERNLI</h3>
-                        <p class="project-desc">Кофейня с уютным визуалом и меню</p>
-                        <a href="https://www.behance.net/gallery/251708363/coffee-house-STERNLI" target="_blank" class="project-link">Behance →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/wedding.png" alt="Wedding Invitation">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-name handwritten pink">Wedding Invitation</h3>
-                        <p class="project-desc">Элегантное свадебное приглашение</p>
-                        <a href="https://www.behance.net/gallery/253111591/Wedding-invitation-priglasitelnoe-na-svadbu" target="_blank" class="project-link">Behance →</a>
+                    <div class="project-card animate-on-scroll">
+                        <div class="project-image">
+                            <img src="img/coffe.png" alt="STERNLI">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-name handwritten pink">STERNLI</h3>
+                            <p class="project-desc">Кофейня с уютным визуалом и меню</p>
+                            <a href="https://www.behance.net/gallery/251708363/coffee-house-STERNLI" target="_blank" class="project-link">Behance →</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- 2. Coding -->
+            <div class="portfolio-category" id="portfolio-coding">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">ВЁРСТКА <span class="pink">САЙТОВ</span></h3>
+                </div>
+                <p class="category-desc animate-on-scroll">Самостоятельная реализация дизайн-макетов с использованием современных веб-технологий. Адаптивность, анимации и чистый код.</p>
+                <div class="coding-projects">
+                    <div class="coding-card animate-on-scroll">
+                        <div class="coding-icon">💒</div>
+                        <h4>Wedding Invitation</h4>
+                        <p>Свадебное приглашение с плавными анимациями и адаптивной вёрсткой</p>
+                        <a href="https://plancksconstantt-design.github.io/Weeding/" target="_blank" class="coding-link">Посмотреть сайт →</a>
+                    </div>
+                    <div class="coding-card animate-on-scroll">
+                        <div class="coding-icon">☕</div>
+                        <h4>Coffee House</h4>
+                        <p>Лендинг кофейни с уютным визуалом и интерактивным меню</p>
+                        <a href="https://plancksconstantt-design.github.io/coffee_house/" target="_blank" class="coding-link">Посмотреть сайт →</a>
+                    </div>
+                    <div class="coding-card animate-on-scroll">
+                        <div class="coding-icon">🧘</div>
+                        <h4>Yoga Project</h4>
+                        <p>Сайт для йога-студии с атмосферным дизайном и расписанием</p>
+                        <a href="https://plancksconstantt-design.github.io/yoga-project/" target="_blank" class="coding-link">Посмотреть сайт →</a>
+                    </div>
+                    <div class="coding-card animate-on-scroll">
+                        <div class="coding-icon">🤖</div>
+                        <h4>AI Academy</h4>
+                        <p>Образовательная платформа по искусственному интеллекту</p>
+                        <a href="https://plancksconstantt-design.github.io/ai-academy/" target="_blank" class="coding-link">Посмотреть сайт →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Blender -->
+            <div class="portfolio-category" id="portfolio-blender">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">РАБОТА <span class="pink">В BLENDER</span></h3>
+                </div>
+                <div class="info-block">
+                    <div class="animate-on-scroll">
+                        <p class="info-text">Год работала инженером-программистом в сфере Machine Learning. Занималась разработкой и подготовкой датасетов для обучения нейросетей, включая создание, рендеринг и обработку 3D-моделей в Blender.</p>
+                        <div class="info-tags">
+                            <span class="tag">3D Modeling</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Dataset Creation</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="gallery-grid cols-2 animate-on-scroll">
+                        <div class="placeholder-box">
+                            <span>3D Работа 1<br>(Замени на &lt;img&gt;)</span>
+                        </div>
+                        <div class="placeholder-box">
+                            <span>3D Работа 2<br>(Замени на &lt;img&gt;)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Wedding Polygraphy -->
+            <div class="portfolio-category" id="portfolio-wedding">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">СВАДЕБНАЯ <span class="pink">ПОЛИГРАФИЯ</span></h3>
+                </div>
+                <p class="category-desc animate-on-scroll">Создаю уникальные бумажные пригласительные на свадьбу и оформляю полиграфические листы с текстами, которые идеально ложатся в печать. Каждый проект — это индивидуальная история, воплощённая в типографике и деталях.</p>
+                <div class="gallery-grid cols-3 animate-on-scroll">
+                    <div class="placeholder-box"><span>Пригласительное 1</span></div>
+                    <div class="placeholder-box"><span>Пригласительное 2</span></div>
+                    <div class="placeholder-box"><span>Макет для печати</span></div>
+                </div>
+            </div>
+
+            <!-- 5. Presentations -->
+            <div class="portfolio-category" id="portfolio-presentations">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">ПРЕЗЕНТАЦИИ</h3>
+                </div>
+                <div class="presentation-showcase animate-on-scroll">
+                    <h4 class="handwritten pink">Излучение абсолютно чёрного тела</h4>
+                    <p>Научно-образовательная презентация с визуализацией сложных физических концепций, графиками и структурированной подачей материала.</p>
+                    <div class="placeholder-box wide animate-on-scroll" style="max-width: 800px; margin: 0 auto;">
+                        <span>Слайд презентации: Излучение чёрного тела<br>(Замени на &lt;img&gt;)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Mobile Photo -->
+            <div class="portfolio-category" id="portfolio-photo">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">МОБИЛЬНАЯ <span class="pink">СЪЁМКА</span></h3>
+                </div>
+                <p class="category-desc animate-on-scroll">Мобильная фотография, композиция и цветокоррекция для создания эстетичного визуального контента.</p>
+                <div class="gallery-grid cols-3 animate-on-scroll">
+                    <div class="placeholder-box"><span>Фото 1</span></div>
+                    <div class="placeholder-box"><span>Фото 2</span></div>
+                    <div class="placeholder-box"><span>Фото 3</span></div>
+                    <div class="placeholder-box"><span>Фото 4</span></div>
+                    <div class="placeholder-box"><span>Фото 5</span></div>
+                    <div class="placeholder-box"><span>Фото 6</span></div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -209,11 +311,11 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact__wrapper">
-                <div class="contact__info">
+                <div class="contact__info animate-on-scroll">
                     <h2 class="section-title handwritten">КОНТАКТЫ</h2>
                     <div class="contact-list">
                         <div class="contact-item">
-                            <span class="contact-icon">️</span>
+                            <span class="contact-icon">💬</span>
                             <div>
                                 <span class="contact-label">Telegram:</span>
                                 <a href="https://t.me/plconstt" class="contact-link">@plconstt</a>
@@ -235,7 +337,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact__form-wrapper">
+                <div class="contact__form-wrapper animate-on-scroll">
                     <form class="contact-form" id="contactForm">
                         <h3 class="form-title handwritten">Напишите мне</h3>
                         <div class="form-group">
