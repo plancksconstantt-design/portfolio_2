@@ -13,7 +13,7 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav__container">
-            <a href="#hero" class="nav__logo">АНЯ</a>
+            <a href="#hero" class="nav__logo">soulannity</a>
             <ul class="nav__menu">
                 <li><a href="#about" class="nav__link">Обо мне</a></li>
                 <li><a href="#services" class="nav__link">Услуги</a></li>
@@ -50,49 +50,77 @@
     </header>
 
     <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title handwritten">МОЙ <span class="pink">ОПЫТ</span> И <span class="pink">ЗНАНИЯ</span></h2>
-            </div>
-            <div class="about__grid">
-                <div class="about__photo animate-on-scroll">
-                    <div class="photo-frame">
-                        <img src="img/iam.png" alt="Аня" class="profile-img">
-                    </div>
-                    <div class="blob blob-1"></div>
-                    <div class="blob blob-2"></div>
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title handwritten">МОЙ <span class="pink">ОПЫТ</span> И <span class="pink">ЗНАНИЯ</span></h2>
+        </div>
+        <div class="about__grid">
+            <!-- Левая колонка: фото -->
+            <div class="about__photo animate-on-scroll">
+                <div class="photo-frame">
+                    <img src="img/iam.png" alt="Аня" class="profile-img">
                 </div>
-                <div class="about__content">
-                    <div class="about__block animate-on-scroll">
-                        <h3 class="about__subtitle pink handwritten">ОБРАЗОВАНИЕ</h3>
-                        <ul class="check-list">
-                            <li><span class="check">✓</span> Курсы TEACHMESKILLS по UX/UI дизайну</li>
-                            <li><span class="check">✓</span> БГУИР - программист-веб-дизайнер</li>
-                        </ul>
-                    </div>
-                    <div class="about__block animate-on-scroll">
-                        <h3 class="about__subtitle pink handwritten">HARD SKILLS</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">User Experience</div>
-                            <div class="skill-item">Figma</div>
-                            <div class="skill-item">Photoshop</div>
-                            <div class="skill-item">Web Design</div>
-                            <div class="skill-item">Prototyping</div>
-                            <div class="skill-item">PowerPoint</div>
-                            <div class="skill-item">User Interface</div>
-                            <div class="skill-item">Webflow</div>
-                            <div class="skill-item">Wireframing</div>
-                            <div class="skill-item">Design Research</div>
-                            <div class="skill-item">User Flow</div>
-                            <div class="skill-item">English (A2)</div>
-                            <div class="skill-item">Типографика</div>
-                        </div>
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+
+            <!-- Правая колонка: контент -->
+            <div class="about__content">
+                <!-- Блок 1: Образование -->
+                <div class="about__block animate-on-scroll">
+                    <h3 class="about__subtitle pink handwritten">ОБРАЗОВАНИЕ</h3>
+                    <ul class="check-list">
+                        <li>
+                            <img src="img/check_mark.png" alt="check" class="check-icon">
+                            <strong>БГУИР</strong> — программист-веб-дизайнер <span class="date">(2026)</span>
+                        </li>
+                        <li>
+                            <img src="img/check_mark.png" alt="check" class="check-icon">
+                            <strong>Курсы TEACHMESKILLS</strong> по UX/UI дизайну <span class="date">(2023)</span>
+                        </li>
+                        <li>
+                            <img src="img/check_mark.png" alt="check" class="check-icon">
+                            <strong>БГУ</strong> — физик-инженер <span class="date">(2022)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Блок 2: Опыт работы -->
+                <div class="about__block animate-on-scroll">
+                    <h3 class="about__subtitle pink handwritten">ОПЫТ РАБОТЫ</h3>
+                    <ul class="check-list">
+                        <li>
+                            <img src="img/check_mark.png" alt="check" class="check-icon">
+                            <strong>ОАО «Пеленг»</strong> — инженер-программист в сфере ML <span class="date">(с октября 2025)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Блок 3: Hard Skills -->
+                <div class="about__block animate-on-scroll">
+                    <h3 class="about__subtitle pink handwritten">HARD SKILLS</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">User Experience</div>
+                        <div class="skill-item">Figma</div>
+                        <div class="skill-item">Photoshop</div>
+                        <div class="skill-item">Web Design</div>
+                        <div class="skill-item">Prototyping</div>
+                        <div class="skill-item">PowerPoint</div>
+                        <div class="skill-item">User Interface</div>
+                        <div class="skill-item">Webflow</div>
+                        <div class="skill-item">Wireframing</div>
+                        <div class="skill-item">Design Research</div>
+                        <div class="skill-item">User Flow</div>
+                        <div class="skill-item">English (A2)</div>
+                        <div class="skill-item">Типографика</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
      <!-- Services Section (Navigation) -->
     <section class="services" id="services">
@@ -443,68 +471,51 @@
         </div>
     </section>
 
-        <!-- Contact Section -->
+            <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="contact__wrapper">
-                <div class="contact__info animate-on-scroll">
-                    <h2 class="section-title handwritten">КОНТАКТЫ</h2>
-                    <div class="contact-list">
-                        
-                        <!-- Telegram -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <img src="img/tg_mark.png" alt="Telegram">
-                            </div>
-                            <div>
-                                <span class="contact-label">Telegram:</span>
-                                <a href="https://t.me/plconstt" class="contact-link">@plconstt</a>
-                            </div>
-                        </div>
-
-                        <!-- Телефон -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <img src="img/phon_mark.png" alt="Telegram">
-                            </div>
-                            <div>
-                                <span class="contact-label">Телефон:</span>
-                                <a href="tel:+375298141006" class="contact-link">+375 (29) 8141006</a>
-                            </div>
-                        </div>
-
-                        <!-- Email -->
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <img src="img/mail_mark.png" alt="Telegram">
-                            </div>
-                            <div>
-                                <span class="contact-label">Email:</span>
-                                <a href="mailto:annborozda@gmail.com" class="contact-link">annborozda@gmail.com</a>
-                            </div>
-                        </div>
-
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title handwritten">КОНТАКТЫ</h2>
+                <p class="section-subtitle">Буду рада обсудить ваш проект или просто пообщаться!</p>
+            </div>
+            
+            <div class="contact-cards animate-on-scroll">
+                <!-- Telegram -->
+                <a href="https://t.me/plconstt" target="_blank" class="contact-card">
+                    <div class="contact-card__icon">
+                        <img src="img/tg_mark.png" alt="Telegram">
                     </div>
-                </div>
-                
-                <div class="contact__form-wrapper animate-on-scroll">
-                    <form class="contact-form" id="contactForm">
-                        <h3 class="form-title handwritten">Напишите мне</h3>
-                        <div class="form-group">
-                            <input type="text" class="form-input" placeholder="Ваше имя" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-input" placeholder="Ваш email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-input" rows="5" placeholder="Ваше сообщение" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit">Отправить →</button>
-                    </form>
-                </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">Telegram</span>
+                        <span class="contact-card__value">@plconstt</span>
+                    </div>
+                </a>
+
+                <!-- Телефон -->
+                <a href="tel:+375298141006" class="contact-card">
+                    <div class="contact-card__icon">
+                        <img src="img/phon_mark.png" alt="Телефон">
+                    </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">Телефон</span>
+                        <span class="contact-card__value">+375 (29) 814-10-06</span>
+                    </div>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:annborozda@gmail.com" class="contact-card">
+                    <div class="contact-card__icon">
+                        <img src="img/mail_mark.png" alt="Email">
+                    </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">Email</span>
+                        <span class="contact-card__value">annborozda@gmail.com</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
