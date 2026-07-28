@@ -67,3 +67,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('✨ Сайт-резюме загружен успешно!');
 });
+// ===== LIGHTBOX FUNCTIONALITY =====
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxClose = document.getElementById('lightboxClose');
+const lightboxOverlay = document.querySelector('.lightbox__overlay');
+const collageItems = document.querySelectorAll('.collage-item img');
+
+// Открытие лайтбокса при клике на картинку
+collageItems.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', function() {
+        lightboxImage.src = this.src;
+        lightboxImage.alt = this.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Блокируем скролл страницы
+    });
+});
+
+// Закрытие лайтбокса
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = ''; // Возвращаем скролл
+}
+
+// Закрытие по кнопке
+lightboxClose.addEventListener('click', closeLightbox);
+
+// Закрытие по клику на затемнённый фон
+lightboxOverlay.addEventListener('click', closeLightbox);
+
+// Закрытие по клавише Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightbox();
+    }
+});
