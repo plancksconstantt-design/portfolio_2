@@ -1682,7 +1682,7 @@ section {
         justify-content: center;
     }
 }
-* ===== 3D & AI EXPERTISE SECTION ===== */
+ /* ===== 3D & AI EXPERTISE SECTION =====  */
 .expertise-section {
     padding: 80px 0 100px;
     background: var(--bg);
