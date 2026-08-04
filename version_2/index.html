@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аня - UX/UI Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Добавлен Quicksand как надежный резервный шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#hero" class="nav__logo">soulannity</a>
+            <ul class="nav__menu">
+                <li><a href="#about" class="nav__link">Обо мне</a></li>
+                <li><a href="#services" class="nav__link">Услуги</a></li>
+                <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+                <li><a href="#contact" class="nav__link">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__greeting handwritten">ПРИВЕТ!</span><br>
+                    <span class="hero__subtitle handwritten">Я <span class="pink">АНЯ</span></span>
+                </h1>
+                <p class="hero__description">
+                    UX/UI DESIGNER, WEB-ДИЗАЙНЕР И НЕ ТОЛЬКО!<br>
+                    ЗАНИМАЮСЬ ДИЗАЙНОМ УЖЕ 2 ГОДА
+                </p>
+                <div class="hero__badges">
+                    <span class="badge">INSTAGRAM</span>
+                    <span class="badge">MOBILE PHOTO</span>
+                    <span class="badge">CONTENT</span>
+                </div>
+            </div>
+            <div class="hero__visual animate-on-scroll">
+                <img src="img/designer.png" alt="Аня - Дизайнер" class="hero-image">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title handwritten">Обо <span class="pink">мне</span></h2>
+            </div>
+
+            <!-- 1. Intro Block -->
+            <div class="about-intro animate-on-scroll">
+                <div class="about-intro__photo">
+                    <img src="img/iam.png" alt="Аня" class="profile-img">
+                </div>
+                <div class="about-intro__text">
+                    <p class="intro-lead">
+                        UX/UI-дизайнер с бэкграундом в <span class="pink">физике</span> и <span class="pink">Machine Learning</span>.
+                    </p>
+                    <p class="intro-desc">
+                        Мой путь из инженерии в дизайн дает мне уникальное преимущество: я создаю не просто красивые макеты, а технически реализуемые продукты. Я понимаю, как работают данные, говорю с разработчиками на одном языке и нахожу неочевидные закономерности в пользовательском поведении.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 2. Main Grid: Timeline + Skills -->
+            <div class="about-grid">
+                <!-- Left Column: Experience & Education Timeline -->
+                <div class="about-column">
+                    <h3 class="column-title handwritten">Мой <span class="pink">путь</span></h3>
+                    
+                    <div class="timeline">
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-date">2023 – Наст. время</div>
+                            <div class="timeline-card">
+                                <h4>UX/UI Designer <span class="timeline-badge">Freelance / Commercial</span></h4>
+                                <p>Разработка цифровых и печатных решений под ключ. Полный цикл: от исследований и вайрфреймов до передачи макетов в верстку или реализации на Webflow/HTML/CSS.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-date">2025 – наст. время</div>
+                            <div class="timeline-card">
+                                <h4>ML Engineer <span class="timeline-badge">ОАО «Пеленг»</span></h4>
+                                <p>Разработка пайплайнов генерации синтетических данных в Blender для обучения Computer Vision моделей.</p>
+                                <div class="ux-insight">
+                                    <strong>💡 Навык для UX:</strong> Алгоритмическое мышление и опыт кросс-функциональной работы с backend-разработчиками.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-date">2022 – 2025</div>
+                            <div class="timeline-card">
+                                <h4>Research Engineer <span class="timeline-badge">ОАО «Пеленг»</span></h4>
+                                <p>Анализ и обработка больших массивов данных, построение логических моделей.</p>
+                                <div class="ux-insight">
+                                    <strong>💡 Навык для UX:</strong> Системное мышление и внимательность к деталям при анализе пользовательского поведения.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item animate-on-scroll">
+                            <div class="timeline-date">Образование</div>
+                            <div class="timeline-card education-card">
+                                <ul class="edu-list">
+                                    <li><strong>БГУИР</strong> — Веб-дизайн и компьютерная графика (2026)</li>
+                                    <li><strong>TechSkills</strong> — Профессиональная переподготовка по UX/UI-дизайну (2023)</li>
+                                    <li><strong>БГУ, Физический факультет</strong> — Физик-инженер (2022)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Hard Skills -->
+                <div class="about-column">
+                    <h3 class="column-title handwritten">Мой <span class="pink">стек</span></h3>
+                    
+                    <div class="skills-wrapper">
+                        <div class="skill-group animate-on-scroll">
+                            <h4 class="skill-group-title"> UX Research & Strategy</h4>
+                            <div class="tags-container">
+                                <span class="skill-tag">User Research & Интервью</span>
+                                <span class="skill-tag">CJM</span>
+                                <span class="skill-tag">User Personas</span>
+                                <span class="skill-tag">Value Proposition Canvas</span>
+                                <span class="skill-tag">Usability Testing</span>
+                                <span class="skill-tag">Анализ конкурентов</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group animate-on-scroll">
+                            <h4 class="skill-group-title"> UI/UX Design</h4>
+                            <div class="tags-container">
+                                <span class="skill-tag">Wireframing & Prototyping</span>
+                                <span class="skill-tag">Design Systems</span>
+                                <span class="skill-tag">Web & Mobile App Design</span>
+                                <span class="skill-tag">Адаптивный дизайн</span>
+                                <span class="skill-tag">Основы Accessibility (a11y)</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group animate-on-scroll">
+                            <h4 class="skill-group-title"> Tools & Technologies</h4>
+                            <div class="tags-container">
+                                <span class="skill-tag highlight-tag">Figma <small>(Auto Layout, Variables)</small></span>
+                                <span class="skill-tag">Webflow</span>
+                                <span class="skill-tag">Blender <small>(3D & ML-датасеты)</small></span>
+                                <span class="skill-tag">Photoshop</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group animate-on-scroll">
+                            <h4 class="skill-group-title"> Code</h4>
+                            <div class="tags-container">
+                                <span class="skill-tag code-tag">HTML5 / CSS3</span>
+                                <span class="skill-tag code-tag">JavaScript (DOM)</span>
+                                <span class="skill-tag code-tag">Git / GitHub</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group animate-on-scroll">
+                            <h4 class="skill-group-title"> Languages</h4>
+                            <div class="tags-container">
+                                <span class="skill-tag">Русский (Native)</span>
+                                <span class="skill-tag">English (Intermediate)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Services Section (Navigation) -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title handwritten">ЧТО <span class="pink">Я МОГУ</span></h2>
+                <p class="section-subtitle">Нажмите на категорию, чтобы перейти к примерам работ</p>
+            </div>
+            
+            <div class="services__grid">
+                <!-- 1 -->
+                <a href="#portfolio-uxui" class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="img/design_mark.png" alt="✓">
+                    </div>
+                    <h3 class="service-title">Дизайн сайтов (UX/UI)</h3>
+                    <p class="service-desc">Проектирование удобных и эстетичных интерфейсов</p>
+                </a>
+                
+                <!-- 2 -->
+                <a href="#portfolio-uxui" class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="img/verstka_mark.png" alt="✓">
+                    </div>
+                    <h3 class="service-title">Вёрстка сайтов</h3>
+                    <p class="service-desc">HTML, CSS, JavaScript, адаптивность</p>
+                </a>
+                
+                <!-- 3 -->
+                <a href="#portfolio-expertise" class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="img/blender_mark.png" alt="✓">
+                    </div>
+                    <h3 class="service-title">3D и Synthetic Data</h3>
+                    <p class="service-desc">3D моделирование и датасеты для ML</p>
+                </a>
+                
+                <!-- 4 -->
+                <a href="#portfolio-presentations" class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="img/presentation_mark.png" alt="✓">
+                    </div>
+                    <h3 class="service-title">Презентации</h3>
+                    <p class="service-desc">Дизайн и разработка слайдов любой сложности</p>
+                </a>
+
+                
+
+                <!-- 5 (НОВАЯ) -->
+                <a href="#portfolio-arch" class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <!-- Если нет отдельной иконки, можно временно использовать design_mark.png -->
+                        <img src="img/poligraph_mark.png" alt="✓"> 
+                    </div>
+                    <h3 class="service-title">Архитектурная графика</h3>
+                    <p class="service-desc">Типографика, композиция и верстка архитектурных листов</p>
+                </a>
+                <!-- 6 -->
+                <a href="#portfolio-photo" class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="img/mob_mark.png" alt="✓">
+                    </div>
+                    <h3 class="service-title">Мобильная съёмка</h3>
+                    <p class="service-desc">Контентная фотография и обработка</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title handwritten">МОИ <span class="pink">РАБОТЫ</span></h2>
+            </div>
+
+            <!-- UX/UI Projects Detailed Section -->
+            <section class="portfolio-detailed" id="portfolio-uxui">
+                <div class="container">
+                    <div class="section-header animate-on-scroll">
+                        <h2 class="section-title handwritten">UX/UI <span class="pink">ПРОЕКТЫ</span></h2>
+                        <p class="section-subtitle">Подробный разбор моих работ: от исследований до финального дизайна</p>
+                    </div>
+
+                    <!-- Project 01: Wedding Experience -->
+                    <div class="project-detailed-card animate-on-scroll">
+                        <div class="project-header">
+                            <img src="img/check_mark.png" alt="✓" class="project-icon">
+                            <div>
+                                <h3 class="project-title handwritten">Свадебное приглашение: <span class="pink">Digital & Print</span></h3>
+                            </div>
+                        </div>
+                        <p class="project-main-desc">
+                            End-to-end разработка цифрового и печатного опыта для мероприятия. 
+                            Реализовала автоматизированный сбор ответов гостей (RSVP) через веб-форму и обеспечила визуальную целостность бренда от полиграфии до веба.
+                        </p>
+                        <div class="project-content-wrapper">
+                            <div class="project-info-col">
+                                <div class="info-block">
+                                    <h4>Решенные задачи:</h4>
+                                    <ul>
+                                        <li>Проектирование пути пользователя: от сканирования QR-кода на бумаге до заполнения формы на мобильном.</li>
+                                        <li>Настройка автоматической отправки структурированных данных на email организатора.</li>
+                                        <li>Разработка единой дизайн-системы для сайта, пригласительных листов и схемы рассадки.</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <h4>Стек и инструменты:</h4>
+                                    <p>Figma, HTML5, CSS3 (Animations), JavaScript, Print Design</p>
+                                </div>
+                            </div>
+                            <div class="project-visual-col">
+                                <div class="project-preview">
+                                    <img src="img/wedding.png" alt="Wedding Invitation Mockup">
+                                </div>
+                                <div class="image-action-row">
+                                    <a href="https://plancksconstantt-design.github.io/Weeding/" target="_blank" class="img-btn img-btn-primary">
+                                        <span>Открыть сайт</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                    <a href="https://www.behance.net/gallery/253111591/Wedding-invitation-priglasitelnoe-na-svadbu" target="_blank" class="img-btn img-btn-secondary">
+                                        <span>Исследование и дизайн</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 02: Moana Academy -->
+                    <div class="project-detailed-card animate-on-scroll">
+                        <div class="project-header">
+                            <img src="img/check_mark.png" alt="✓" class="project-icon">
+                            <div>
+                                <h3 class="project-title handwritten">Moana Academy</h3>
+                            </div>
+                        </div>
+                        <p class="project-main-desc">
+                            Образовательная платформа с ярким, дружелюбным интерфейсом. 
+                            Реализован полный цикл: от UX-исследований и прототипирования до адаптивной frontend-верстки.
+                        </p>
+                        <div class="project-content-wrapper">
+                            <div class="project-info-col">
+                                <div class="info-block">
+                                    <h4>UX-исследования и задачи:</h4>
+                                    <ul>
+                                        <li>Постановка целей и анализ болей целевой аудитории</li>
+                                        <li>Value Proposition Canvas и сегментация пользователей</li>
+                                        <li>Проектирование интуитивной навигации и адаптивного UI</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <h4>Стек и инструменты:</h4>
+                                    <p>Figma, HTML5, CSS3 (Grid, Variables), JavaScript (DOM), GitHub</p>
+                                </div>
+                            </div>
+                            <div class="project-visual-col">
+                                <div class="project-preview">
+                                    <img src="img/moana.png" alt="Moana Academy">
+                                </div>
+                                <div class="image-action-row">
+                                    <a href="https://plancksconstantt-design.github.io/ai-academy/" target="_blank" class="img-btn img-btn-primary">
+                                        <span>Открыть сайт</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                    <a href="https://www.behance.net/gallery/251493143/Moana-Academy" target="_blank" class="img-btn img-btn-secondary">
+                                        <span>Исследование и дизайн</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 03: Awesome Ways Yoga -->
+                    <div class="project-detailed-card animate-on-scroll">
+                        <div class="project-header">
+                            <img src="img/check_mark.png" alt="✓" class="project-icon">
+                            <div>
+                                <h3 class="project-title handwritten">Awesome Ways Yoga</h3>
+                            </div>
+                        </div>
+                        <p class="project-main-desc">
+                            Сайт для йога-студии с атмосферным, успокаивающим дизайном. 
+                            Реализован полный цикл: от UX-исследований и проектирования удобного расписания до адаптивной frontend-верстки.
+                        </p>
+                        <div class="project-content-wrapper">
+                            <div class="project-info-col">
+                                <div class="info-block">
+                                    <h4>UX-исследования и задачи:</h4>
+                                    <ul>
+                                        <li>Постановка целей и задач бизнеса в нише wellness</li>
+                                        <li>Value Proposition Canvas и анализ конкурентов</li>
+                                        <li>Проектирование интуитивной навигации и адаптивного UI для мобильных устройств</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <h4>Стек и инструменты:</h4>
+                                    <p>Figma, HTML5, CSS3 (Animations, Flexbox), Vanilla JS</p>
+                                </div>
+                            </div>
+                            <div class="project-visual-col">
+                                <div class="project-preview">
+                                    <img src="img/yoga.png" alt="Awesome Ways Yoga">
+                                </div>
+                                <div class="image-action-row">
+                                    <a href="https://plancksconstantt-design.github.io/yoga-project/" target="_blank" class="img-btn img-btn-primary">
+                                        <span>Открыть сайт</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                    <a href="https://www.behance.net/gallery/251658017/Awesome-Ways-Yoga" target="_blank" class="img-btn img-btn-secondary">
+                                        <span>Исследование и дизайн</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 04: STERNLI -->
+                    <div class="project-detailed-card animate-on-scroll">
+                        <div class="project-header">
+                            <img src="img/check_mark.png" alt="✓" class="project-icon">
+                            <div>
+                                <h3 class="project-title handwritten">STERNLI</h3>
+                            </div>
+                        </div>
+                        <p class="project-main-desc">
+                            Лендинг кофейни с уютным визуалом и интерактивным меню. 
+                            Реализован полный цикл: от анализа целевой аудитории и User Flow до кроссбраузерной frontend-верстки.
+                        </p>
+                        <div class="project-content-wrapper">
+                            <div class="project-info-col">
+                                <div class="info-block">
+                                    <h4>UX-исследования и задачи:</h4>
+                                    <ul>
+                                        <li>Определение целей бизнеса и анализ целевой аудитории (CA)</li>
+                                        <li>Разработка пользовательских сценариев (User Flow) для заказа</li>
+                                        <li>Создание интерактивного прототипа и его реализация в коде</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <h4>Стек и инструменты:</h4>
+                                    <p>Figma, HTML5, CSS3 (Grid, Flexbox), JavaScript (DOM), Git/GitHub</p>
+                                </div>
+                            </div>
+                            <div class="project-visual-col">
+                                <div class="project-preview">
+                                    <img src="img/coffe.png" alt="STERNLI">
+                                </div>
+                                <div class="image-action-row">
+                                    <a href="https://plancksconstantt-design.github.io/coffee_house/" target="_blank" class="img-btn img-btn-primary">
+                                        <span>Открыть сайт</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                    </a>
+                                    <a href="https://www.behance.net/gallery/251708363/coffee-house-STERNLI" target="_blank" class="img-btn img-btn-secondary">
+                                        <span>Исследование и дизайн</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 05: FRANCHEL -->
+                    <div class="project-detailed-card animate-on-scroll">
+                        <div class="project-header">
+                            <img src="img/check_mark.png" alt="✓" class="project-icon">
+                            <div>
+                                <h3 class="project-title handwritten">FRANCHEL</h3>
+                            </div>
+                        </div>
+                        <p class="project-main-desc">Онлайн-магазин одежды с минималистичным и эстетичным дизайном, ориентированный на удобство пользователя.</p>
+                        <div class="project-content-wrapper">
+                            <div class="project-info-col">
+                                <div class="info-block">
+                                    <h4>UX-исследования:</h4>
+                                    <ul>
+                                        <li>Постановка целей и задач бизнеса</li>
+                                        <li>Value Proposition Canvas</li>
+                                        <li>Глубокий анализ конкурентов</li>
+                                    </ul>
+                                </div>
+                                <div class="info-block">
+                                    <h4>Инструменты:</h4>
+                                    <p>Figma, Photoshop</p>
+                                </div>
+                            </div>
+                            <div class="project-visual-col">
+                                <div class="project-preview">
+                                    <img src="img/franchel.png" alt="FRANCHEL">
+                                </div>
+                                <div class="image-action-row">
+                                    <a href="https://www.behance.net/gallery/181598649/Online-clothing-store-FRANCHEL" target="_blank" class="img-btn img-btn-secondary" style="width: 100%; max-width: 100%;">
+                                        <span>Исследование и дизайн</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Presentations -->
+            <div class="portfolio-category" id="portfolio-presentations">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">ПРЕЗЕНТАЦИИ</h3>
+                </div>
+                <div class="presentation-showcase animate-on-scroll">
+                    <h4 class="handwritten pink">Излучение абсолютно чёрного тела</h4>
+                    <p>Научно-образовательная презентация с визуализацией сложных физических концепций, графиками и структурированной подачей материала.</p>
+                    
+                    <div class="presentation-collage">
+                        <div class="collage-item item-1 animate-on-scroll">
+                            <img src="img/presentation_3.png" alt="Чёрная дыра 1">
+                        </div>
+                        <div class="collage-item item-2 animate-on-scroll">
+                            <img src="img/presentation_4.png" alt="Космос 2">
+                        </div>
+                        <div class="collage-item item-3 animate-on-scroll">
+                            <img src="img/presentation_2.png" alt="Звёзды 3">
+                        </div>
+                        <div class="collage-item item-4 animate-on-scroll">
+                            <img src="img/presentation_1.png" alt="Галактика 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D & AI Expertise (Обернуто в правильную секцию с ID для навигации) -->
+            <section class="portfolio-category expertise-section" id="portfolio-expertise">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title handwritten">3D-графика и <span class="pink">Synthetic Data</span></h2>
+                    <p class="section-subtitle">Мой опыт на стыке компьютерной графики и машинного обучения</p>
+                </div>
+                <div class="expertise-card animate-on-scroll">
+                    <div class="expertise-header">
+                        <div class="expertise-icon">
+                            <img src="img/verstka_mark.png" alt="icon" style="width: 32px; height: 32px;">
+                        </div>
+                        <h3>Генерация синтетических датасетов для Computer Vision</h3>
+                    </div>
+                    
+                    <p class="expertise-intro">
+                        Имею практический опыт создания фотореалистичных 3D-сцен в Blender для обучения моделей машинного обучения. Моя задача заключалась в имитации сложных реальных условий для повышения точности и устойчивости (robustness) алгоритмов компьютерного зрения.
+                    </p>
+
+                    <div class="expertise-grid">
+                        <div class="expertise-item">
+                            <h4><img src="img/mob_mark.png" alt="icon" style="width: 20px; height: 20px;"> Спектральный рендеринг</h4>
+                            <p>Генерация изображений в различных диапазонах, включая инфракрасный (IR) спектр, для специфических задач детекции объектов.</p>
+                        </div>
+                        <div class="expertise-item">
+                            <h4><img src="img/mob_mark.png" alt="icon" style="width: 20px; height: 20px;"> PBR и процедурные шейдеры</h4>
+                            <p>Создание реалистичных материалов, работа с HDRI-картами освещения и тонкая настройка шейдеров для достижения максимальной фотореалистичности.</p>
+                        </div>
+                        <div class="expertise-item">
+                            <h4><img src="img/mob_mark.png" alt="icon" style="width: 20px; height: 20px;"> Параметризация сцен</h4>
+                            <p>Вариативное расположение объектов относительно виртуальной камеры на различных дистанциях для имитации реальных условий эксплуатации.</p>
+                        </div>
+                        <div class="expertise-item">
+                            <h4><img src="img/mob_mark.png" alt="icon" style="width: 20px; height: 20px;"> Симуляция окружающей среды</h4>
+                            <p>Процедурная генерация сложных погодных условий (снег, дождь, туман, обледенение) для тестирования устойчивости AI-моделей.</p>
+                        </div>
+                    </div>
+
+                    <div class="expertise-tags">
+                        <span class="tag">Blender 3D</span>
+                        <span class="tag">Synthetic Data Generation</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Procedural Shading</span>
+                        <span class="tag">HDRI & Lighting</span>
+                    </div>
+
+                    <div class="expertise-ux-bridge">
+                        <strong><img src="img/design_mark.png" alt="icon" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 6px;"> Как это помогает мне в UX/UI:</strong> 
+                        Этот опыт дал мне глубокое понимание работы со сложными данными, алгоритмическое мышление и способность говорить с ML-инженерами и разработчиками на одном языке. Я легко погружаюсь в технические продукты и AI-стартапы.
+                    </div>
+                </div>
+            </section>
+                        <!-- Архитектурная графика -->
+            <div class="portfolio-category" id="portfolio-arch">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">АРХИТЕКТУРНАЯ <span class="pink">ГРАФИКА</span></h3>
+                </div>
+                <p class="category-desc animate-on-scroll">
+                    Профессиональная визуальная подача архитектурных проектов. 
+                    Акцент на строгой типографике, читаемости технических данных, работе с сеткой и гармоничной композиции листов.
+                </p>
+                
+                <div class="arch-projects-grid">
+                    <!-- Проект 1 -->
+                    <a href="https://www.behance.net/gallery/181610381/planirovka-mestnosti-i-naselenija" target="_blank" class="arch-project-card animate-on-scroll">
+                        <div class="arch-project-image">
+                            <!-- ЗАМЕНИ img/arch_plan.png на реальный скриншот из этого проекта -->
+                            <img src="img/arh_01.png" alt="Планировка местности и населения">
+                            <div class="arch-overlay">
+                                <span>Смотреть на Behance</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </div>
+                        </div>
+                        <div class="arch-project-info">
+                            <h4>Планировка местности и населения</h4>
+                            <p>Компоновка генплана, работа с масштабом и иерархией текстовых блоков.</p>
+                        </div>
+                    </a>
+
+                    <!-- Проект 2 -->
+                    <a href="https://www.behance.net/gallery/181608947/arhitekturnaja-kompozicija" target="_blank" class="arch-project-card animate-on-scroll">
+                        <div class="arch-project-image">
+                            <!-- ЗАМЕНИ img/arch_comp.png на реальный скриншот из этого проекта -->
+                            <img src="img/arh_02.jpg" alt="Архитектурная композиция">
+                            <div class="arch-overlay">
+                                <span>Смотреть на Behance</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </div>
+                        </div>
+                        <div class="arch-project-info">
+                            <h4>Архитектурная композиция</h4>
+                            <p>Визуальный баланс, акценты и чистота подачи чертежей и схем.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Mobile Photo -->
+            <div class="portfolio-category" id="portfolio-photo">
+                <div class="category-header animate-on-scroll">
+                    <h3 class="category-title handwritten">МОБИЛЬНАЯ <span class="pink">СЪЁМКА</span></h3>
+                </div>
+                <p class="category-desc animate-on-scroll">Мобильная фотография, композиция и цветокоррекция для создания эстетичного визуального контента.</p>
+
+                <!-- Studio Shoot 01 -->
+                <div class="photo-subsection animate-on-scroll">
+                    <h4 class="subsection-title handwritten pink">
+                        <img src="img/check_mark.png" alt="✓" class="subsection-icon">
+                        Студийная съёмка 01
+                    </h4>
+                    <p class="subsection-desc">Девушка в чёрном платье на белой панораме. Минималистичная студийная съёмка, где чистота фона подчёркивает элегантность образа и силуэт модели.</p>
+                    <div class="photo-grid grid-3">
+                        <div class="photo-item"><img src="img/photo_nast_1.png" alt="Студийная съёмка 1"></div>
+                        <div class="photo-item"><img src="img/photo_nast_2.png" alt="Студийная съёмка 2"></div>
+                        <div class="photo-item"><img src="img/photo_nast_3.png" alt="Студийная съёмка 3"></div>
+                    </div>
+                </div>
+
+                <!-- Studio Shoot 02 -->
+                <div class="photo-subsection animate-on-scroll">
+                    <h4 class="subsection-title handwritten pink">
+                        <img src="img/check_mark.png" alt="✓" class="subsection-icon">
+                        Студийная съёмка 02
+                    </h4>
+                    <p class="subsection-desc">Два contrasting образа в одной съёмке. Первый — смелый и откровенный, второй — утончённый и нежный.</p>
+                    <div class="photo-grid grid-3x2">
+                        <div class="photo-item"><img src="img/photo_lena_1.png" alt="Студия 02 - шуба 1"></div>
+                        <div class="photo-item"><img src="img/photo_lena_2.png" alt="Студия 02 - шуба 2"></div>
+                        <div class="photo-item"><img src="img/photo_lena_3.png" alt="Студия 02 - шуба 3"></div>
+                        <div class="photo-item"><img src="img/photo_lena_4.png" alt="Студия 02 - свитер 1"></div>
+                        <div class="photo-item"><img src="img/photo_lena_5.png" alt="Студия 02 - свитер 2"></div>
+                        <div class="photo-item"><img src="img/photo_lena_6.png" alt="Студия 02 - свитер 3"></div>
+                    </div>
+                </div>
+
+                <!-- Thematic Shoot -->
+                <div class="photo-subsection animate-on-scroll">
+                    <h4 class="subsection-title handwritten pink">
+                        <img src="img/check_mark.png" alt="✓" class="subsection-icon">
+                        Тематическая съёмка
+                    </h4>
+                    <p class="subsection-desc">Lana Del Rey vibe: золотой час, плёночная эстетика, романтичный пикник на природе.</p>
+                    <div class="photo-grid grid-3">
+                        <div class="photo-item"><img src="img/lana_1.png" alt="Тематическая 1"></div>
+                        <div class="photo-item"><img src="img/lana_2.png" alt="Тематическая 2"></div>
+                        <div class="photo-item"><img src="img/lana_3.png" alt="Тематическая 3"></div>
+                    </div>
+                </div>
+
+                <!-- Street Shoot -->
+                <div class="photo-subsection animate-on-scroll">
+                    <h4 class="subsection-title handwritten pink">
+                        <img src="img/check_mark.png" alt="✓" class="subsection-icon">
+                        Уличная съёмка
+                    </h4>
+                    <p class="subsection-desc">Девушка с бокалом вина на открытой террасе ресторана. Городская романтика и вечерняя атмосфера.</p>
+                    <div class="photo-grid grid-3">
+                        <div class="photo-item"><img src="img/stret_1.png" alt="Уличная 1"></div>
+                        <div class="photo-item"><img src="img/stret_2.png" alt="Уличная 2"></div>
+                        <div class="photo-item"><img src="img/stret_3.png" alt="Уличная 3"></div>
+                    </div>
+                </div>
+
+                <!-- Wedding Shoot -->
+                <div class="photo-subsection animate-on-scroll">
+                    <h4 class="subsection-title handwritten pink">
+                        <img src="img/check_mark.png" alt="✓" class="subsection-icon">
+                        Свадебная фотосессия
+                    </h4>
+                    <p class="subsection-desc">Фотосессия для свадебных пригласительных. Главный цвет свадьбы — благородный бордовый.</p>
+                    <div class="photo-grid grid-4">
+                        <div class="photo-item"><img src="img/wedding_photo_01.jpg" alt="Свадебная 1"></div>
+                        <div class="photo-item"><img src="img/wedding_photo_04.jpg" alt="Свадебная 2"></div>
+                        <div class="photo-item"><img src="img/wedding_photo_03.jpg" alt="Свадебная 3"></div>
+                        <div class="photo-item"><img src="img/wedding_photo_02.jpg" alt="Свадебная 4"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox__overlay"></div>
+        <div class="lightbox__content">
+            <img src="" alt="" class="lightbox__image" id="lightboxImage">
+            <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">✕</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title handwritten">КОНТАКТЫ</h2>
+                <p class="section-subtitle">Буду рада обсудить ваш проект или просто пообщаться!</p>
+            </div>
+            
+            <div class="contact-cards animate-on-scroll">
+                <a href="https://t.me/plconstt" target="_blank" class="contact-card">
+                    <div class="contact-card__icon">
+                        <img src="img/tg_mark.png" alt="Telegram">
+                    </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">Telegram</span>
+                        <span class="contact-card__value">@plconstt</span>
+                    </div>
+                </a>
+
+                <a href="tel:+375298141006" class="contact-card">
+                    <div class="contact-card__icon">
+                        <img src="img/phon_mark.png" alt="Телефон">
+                    </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">Телефон</span>
+                        <span class="contact-card__value">+375 (29) 814-10-06</span>
+                    </div>
+                </a>
+
+                <a href="mailto:annborozda@gmail.com" class="contact-card">
+                    <div class="contact-card__icon">
+                        <img src="img/mail_mark.png" alt="Email">
+                    </div>
+                    <div class="contact-card__info">
+                        <span class="contact-card__label">Email</span>
+                        <span class="contact-card__value">annborozda@gmail.com</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text handwritten">© 2026 Аня. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
