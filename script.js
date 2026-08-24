@@ -140,5 +140,64 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
+    // ==========================================
+    // 6. SMM STORIES SLIDER
+    // ==========================================
+    const storiesContainer = document.querySelector('.stories-container');
+    
+    if (storiesContainer) {
+        const slides = storiesContainer.querySelectorAll('.story-slide');
+        const progressBars = storiesContainer.querySelectorAll('.progress-bar');
+        let currentSlide = 0;
+        let slideInterval;
+        const slideDuration = 4000; // 4 секунды на сторис
+        
+        function showSlide(index) {
+            // Убираем активный класс у всех
+            slides.forEach(slide => slide.classList.remove('active'));
+            progressBars.forEach(bar => {
+                bar.classList.remove('active');
+                bar.classList.remove('completed');
+            });
+            
+            // Показываем текущий слайд
+            slides[index].classList.add('active');
+            progressBars[index].classList.add('active');
+            
+            // Отмечаем предыдущие как завершенные
+            for (let i = 0; i < index; i++) {
+                progressBars[i].classList.add('completed');
+            }
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+        
+        // Запускаем автоматическое переключение
+        function startSlider() {
+            showSlide(0);
+            slideInterval = setInterval(nextSlide, slideDuration);
+        }
+        
+        // Останавливаем при наведении
+        storiesContainer.addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+        
+        // Возобновляем при уходе мыши
+        storiesContainer.addEventListener('mouseleave', () => {
+            slideInterval = setInterval(nextSlide, slideDuration);
+        });
+        
+        // Запускаем слайдер
+        startSlider();
+    }
+
+
+
+
+
 
 });
