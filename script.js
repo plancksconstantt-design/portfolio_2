@@ -195,7 +195,60 @@ document.addEventListener('DOMContentLoaded', function() {
         startSlider();
     }
 
+// ===== SMM STORIES AUTO-SWITCH =====
+const storySlides = document.querySelectorAll('.story-slide');
+const progressBars = document.querySelectorAll('.progress-bar');
+let currentStory = 0;
+let storyInterval;
 
+function showStory(index) {
+    // Скрыть все сторис
+    storySlides.forEach(slide => slide.classList.remove('active'));
+    progressBars.forEach(bar => {
+        bar.classList.remove('active', 'completed');
+    });
+    
+    // Показать текущую
+    if (storySlides[index]) {
+        storySlides[index].classList.add('active');
+    }
+    
+    // Обновить прогресс-бары
+    for (let i = 0; i <= index; i++) {
+        if (progressBars[i]) {
+            if (i < index) {
+                progressBars[i].classList.add('completed');
+            } else {
+                progressBars[i].classList.add('active');
+            }
+        }
+    }
+    
+    currentStory = index;
+}
+
+function nextStory() {
+    const next = (currentStory + 1) % storySlides.length;
+    showStory(next);
+}
+
+// Запуск автопереключения
+if (storySlides.length > 0) {
+    showStory(0);
+    storyInterval = setInterval(nextStory, 4000); // 4 секунды на сторис
+    
+    // Пауза при наведении
+    const storiesContainer = document.querySelector('.stories-container');
+    if (storiesContainer) {
+        storiesContainer.addEventListener('mouseenter', () => {
+            clearInterval(storyInterval);
+        });
+        
+        storiesContainer.addEventListener('mouseleave', () => {
+            storyInterval = setInterval(nextStory, 4000);
+        });
+    }
+}
 
 
 
